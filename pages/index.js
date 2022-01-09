@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -6,8 +7,7 @@ export default function Home() {
       <Head>
         <title>Next Social</title>
       </Head>
-      <h1>hello world</h1>
-      {/* Header */}
+      <Header />
       <main>
         {/* sidebar */}
         {/* social feed */}
