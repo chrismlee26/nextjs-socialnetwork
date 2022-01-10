@@ -30,7 +30,7 @@ function Header() {
         <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
           <SearchIcon className="h-6 text-gray-600" />
           <input
-            className="flex ml-2 item-center bg-transparent outline-none placeholder-gray-500 flex-shrink"
+            className="flex ml-2 item-center bg-transparent outline-none placeholder-gray-500 flex-shrink hidden md:inline-flex"
             type="text"
             placeholder="Search" />
         </div>
@@ -48,6 +48,16 @@ function Header() {
         </div>
       </div>
       {/* Right */}
+      <div className="flex items-center sm:space-x-2 justify-end">
+        {/* Profile Pic */}
+        <p className="whitespace-nowrap font-semibold pr-3">chris</p>
+        <ViewGridIcon className="icon" />
+        <ChatIcon className="icon" />
+        <BellIcon className="icon" />
+        <ChevronDownIcon className="icon" />
+
+      </div>
+
     </div>
   )
 }
